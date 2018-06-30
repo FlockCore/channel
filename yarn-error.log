@@ -1,0 +1,59 @@
+Arguments: 
+  /Users/thejoker/.nvm/versions/node/v10.4.1/bin/node /usr/local/bin/yarn publish
+
+PATH: 
+  /usr/local/opt/openssl/bin:/Users/thejoker/.nvm/versions/node/v10.4.1/bin:/usr/local/opt/postgresql@9.6/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/Xamarin Workbooks.app/Contents/SharedSupport/path-bin:/Users/thejoker/.rvm/bin:/Users/thejoker/.rvm/bin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  10.4.1
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "@flockcore/channel",
+    "version": "0.1.1",
+    "description": "Library For Revelating dWeb Peer Hashes",
+    "contributors": [
+      "Jared Rice Sr. <jared@dwebs.io>",
+      "Distributed Webs Project, LLC. <labs@distributedwebs.org>"
+    ],
+    "license": "MIT",
+    "main": "index.js",
+    "scripts": {
+      "test": "standard && node test.js"
+    },
+    "dependencies": {
+      "@dwcore/dethunk": "dwcore/dethunk#master",
+      "@flockcore/revelation": "flockcore/revelation#master",
+      "bittorrent-dht": "^7.10.0",
+      "buffer-from": "^1.0.0",
+      "debug": "^2.6.9",
+      "pretty-hash": "^1.0.1",
+    },
+    "devDependencies": {
+      "standard": "^6.0.5",
+      "tape": "^4.9.0"
+    },
+    "publishConfig": {
+      "access": "public"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  SyntaxError: /Users/thejoker/LIBRARIES/flockcore/packages/channel/package.json: Unexpected token } in JSON at position 589
+      at JSON.parse (<anonymous>)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:1036:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:98:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:109:13

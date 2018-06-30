@@ -1,0 +1,29 @@
+{
+  "name": "@flockcore/channel",
+  "version": "0.1.1",
+  "description": "Library For Revelating dWeb Peer Hashes",
+  "contributors": [
+    "Jared Rice Sr. <jared@dwebs.io>",
+    "Distributed Webs Project, LLC. <labs@distributedwebs.org>"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && node test.js"
+  },
+  "dependencies": {
+    "@dwcore/dethunk": "dwcore/dethunk#master",
+    "@flockcore/revelation": "flockcore/revelation#master",
+    "bittorrent-dht": "^7.10.0",
+    "buffer-from": "^1.0.0",
+    "debug": "^2.6.9",
+    "pretty-hash": "^1.0.1"
+  },
+  "devDependencies": {
+    "standard": "^6.0.5",
+    "tape": "^4.9.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
