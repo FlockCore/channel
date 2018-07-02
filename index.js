@@ -1,4 +1,4 @@
-var dns = require('@dwdht/server')
+var dns = require('@distdns/server')
 var dethunk = require('@dwcore/dethunk')
 var dht = require('@dwdht/bittorrent')
 var crypto = require('crypto')
