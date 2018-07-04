@@ -2,7 +2,7 @@ var test = require('tape')
 var FlockChannel = require('./index.js')
 var crypto = require('crypto')
 
-test('list', function (t) {
+test('FlockCore Channel Tests: List', function (t) {
   var channel = FlockChannel({dht: false, dns: false})
   var id = crypto.randomBytes(32)
 
@@ -23,7 +23,7 @@ test('list', function (t) {
   t.end()
 })
 
-test('find each other', function (t) {
+test('FlockCore Channel Tests: Find Each Other', function (t) {
   var id = crypto.randomBytes(32)
   var pending = 2
   t.plan(2)
@@ -55,7 +55,7 @@ test('find each other', function (t) {
   }
 })
 
-test('join cb gets called', function (t) {
+test('FlockCore Channel Tests: join cb Gets Called ', function (t) {
   var id = crypto.randomBytes(32)
   var channel1 = FlockChannel()
   channel1.join(id, 1337, function (err) {
