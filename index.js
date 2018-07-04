@@ -1,10 +1,10 @@
 var dns = require('@distdns/server')
 var dethunk = require('@dwcore/dethunk')
-var dht = require('@dwdht/bittorrent')
+var dht = require('bittorrent-dht')
 var crypto = require('crypto')
 var events = require('events')
 var util = require('util')
-var debug = require('debug')('@flockcore/channel')
+var debug = require('debug')('channel')
 var prettyHash = require('pretty-hash')
 var bufferFrom = require('buffer-from')
 
@@ -127,7 +127,6 @@ Revelation.prototype.join = function (id, port, opts, cb) {
   var succeded = false
 
   if (!opts.impliedPort || !this._whoami) return ready()
-
 
   if (this.dns) {
     if (announcing) this.dns.announce(hashHex, port, {server: false})
