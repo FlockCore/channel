@@ -1,6 +1,6 @@
 {
   "name": "@flockcore/channel",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Library For Revelating dWeb Peer Hashes",
   "contributors": [
     "Jared Rice Sr. <jared@dwebs.io>",
@@ -13,11 +13,11 @@
   },
   "dependencies": {
     "@distdns/server": "*",
-    "@dwcore/dethunk": "dwcore/dethunk#master",
     "bittorrent-dht": "*",
     "buffer-from": "^1.0.0",
     "debug": "^2.6.9",
-    "pretty-hash": "^1.0.1"
+    "pretty-hash": "^1.0.1",
+    "thunky": "^0.1.0"
   },
   "devDependencies": {
     "standard": "^6.0.5",
