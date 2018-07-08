@@ -4,8 +4,8 @@ var bufferFrom = require('buffer-from')
 var channel = FlockChannel({
   dns: {
     servers: [
-      'revelation1.dwebs.io',
-      'revelation2.dwebs.io'
+      'revelation1.dwebs.io:6620',
+      'revelation2.dwebs.io:6620'
     ]
   }
 })

@@ -1,5 +1,5 @@
 var dns = require('@distdns/server')
-var dethunk = require('@dwcore/dethunk')
+var thunky = require('thunky')
 var dht = require('bittorrent-dht')
 var crypto = require('crypto')
 var events = require('events')
@@ -36,7 +36,7 @@ function Revelation (opts) {
   this._dnsInterval = opts.dns && opts.dns.interval
   this._announcing = {}
   this._unhash = {}
-  this._whoami = this.dns && this.dns.whoami && dethunk(whoami)
+  this._whoami = this.dns && this.dns.whoami && thunky(whoami)
   if (this._whoami) {
     this._whoami()
   } else {
